@@ -1,0 +1,22 @@
+1.  Problem: 
+        No permissions "Unable to write to folder Error:EACCES: Permission denied
+    Solution
+        sudo chmod -R 777 /home/mack/projects/ttt
+2.  Problem:
+        Cannot npx create-react-app my-app throws:
+            npx create-react-app my-app
+            node:internal/modules/cjs/loader:1080
+            throw err;
+            ^
+
+            Error: Cannot find module '@npmcli/config'
+    Solution
+        Install globally
+            npm install -g create-react-app
+        2nd Problem:
+            no usr permissions
+        Solution:
+            Add all windows permissions
+            restart
+            Works!
+   
